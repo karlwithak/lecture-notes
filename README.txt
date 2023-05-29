@@ -1,0 +1,1 @@
+Resources for soft skills lectures
