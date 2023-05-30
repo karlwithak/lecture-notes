@@ -5,6 +5,7 @@ def print_welcome():
     print("Welcome to the adventure game! 🛡")
     print("Maintain your health while finding food 🥕")
     print("But watch out for the wild animals! 🦊")
+    print("And get the high score! 📈")
     print("")
 
 def print_menu():
@@ -16,6 +17,8 @@ def print_menu():
 def explore():
     global health
     global food
+    global high_score
+    global high_score_player_name
     event = random.randint(1, 3)
     if event == 1:
         print("You found a berry bush! +5 food")
@@ -33,12 +36,18 @@ def explore():
         health = 100
     elif health < 0:
         health = 0
+    score += 1
+    if score > high_score:
+        high_score = score
+        high_score_player_name = player_name
 
 def check_status():
      global health
      global food
+     global score
      print("Health:", health)
      print("Food:", food)
+     print("Score:", score)
 
 def rest():
     global health
@@ -52,21 +61,32 @@ def rest():
     if health > 100:
         health = 100
 
+def view_high_score():
+    global high_score
+    global high_score_player_name
+    print("Highest score is: ", high_score)
+    print("Acheived by player: ", high_score_player_name)
+
 def quit_game():
     global game_on
     game_on = False
     print("Thanks for playing!")
-    print("Final health: ", health)
-    print("Final food: ", food)
+    print("Final status:")
+    check_status()
 
 # Game Variables
 game_on = True
 health = 100
 food = 10
+score = 0
+high_score = 0
+high_score_player_name = ""
+player_name = ""
 
 while game_on:
     print_menu()
-    choice = int(input("What would you like to do? "))
+    player_name = input("What is your name?\n")
+    choice = int(input("What would you like to do?\n"))
     if choice == 1:
         explore()
     elif choice == 2:
@@ -74,6 +94,8 @@ while game_on:
     elif choice == 3:
         rest()
     elif choice == 4:
+        view_high_score()
+    elif choice == 5:
         quit_game()
     else:
         print("Invalid choice, please select from the menu.")
