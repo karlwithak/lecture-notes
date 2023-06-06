@@ -1,12 +1,12 @@
-# New Credit Card Page
+# New Credit Card Page - Ethiopian Airlines ✈
 
 ## 1. Introduction
 
-This document provides a detailed description of the specifications for a new credit card input page for our ecommerce website. This page will be developed to provide a user-friendly and secure way for customers to enter their credit card details for transactions. It will replace our existing page, which customers find confusing and hard to use.
+This document provides a detailed description of the specifications for a new credit card input page for Ethiopian Airlines. This page will be developed to provide a user-friendly and secure way for customers to enter their credit card details for transactions. It will replace our existing page, which customers find confusing and hard to use.
 
 ## 2. Product Overview
 
-The product is a new web page in our ecommerce platform that will be designed to capture, validate, and securely store customer credit card information. 
+The product is a new web page for the airline website that will be designed to capture, validate, and securely store customer credit card information. 
 
 ## 3. Objectives
 
