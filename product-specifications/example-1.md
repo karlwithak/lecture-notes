@@ -14,7 +14,7 @@ The key objectives of the new credit card input page include:
 
 1. Enhance the customer experience by providing an intuitive interface.
 2. Ensure we are only recording valid credit card details.
-3. Increase the number of customers who successfully provide their credit card.
+3. Increase the percentage of customers who successfully provide their credit card by 20%.
 
 ## 4. Features & Specifications
 
