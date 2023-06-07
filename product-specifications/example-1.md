@@ -43,6 +43,7 @@ The key objectives of the new credit card input page include:
 The following has already been built, so should not be considered as part of this project:
 
 - Backend logic and database to store and retrieve credit card information
+- Performing the actual charge of the credit card
 
 ## 7. Future Enhancements
 
